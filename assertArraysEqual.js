@@ -25,8 +25,8 @@ let assertArrayEqual = function(array1,array2) {
   }
 };
 
-assertArrayEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => true
-assertArrayEqual(eqArrays([1, 2, 3], [3, 2, 1]), false); // => false
+assertArrayEqual([1, 2, 3], [1, 2, 3]); // => true
+assertArrayEqual([1, 2, 3], [3, 2, 1]); // => false
 
-assertArrayEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true); // => true
-assertArrayEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false); // => false
+assertArrayEqual(["1", "2", "3"], ["1", "2", "3"]); // => true
+assertArrayEqual(["1", "2", "3"], ["1", "2", 3]); // => false
