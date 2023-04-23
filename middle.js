@@ -1,9 +1,8 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log("😀😀😀Assertion Passed: "  + `${actual}` + " === " + `${expected}`);
+let assertArrayEqual = function(array1,array2) {
+  if (eqArrays(array1, array2)) {
+    console.log(`✅✅✅ Assertion passed: ${array1} === ${array2}`);
   } else {
-    (actual !== expected);
-    console.log("🤬🤬🤬Assertion Failed: " + `${actual}` + " !== " + `${expected}`);
+    console.log(`🛑🛑🛑 Assertion failed: ${array1} !== ${array2}`);
   }
 };
 let eqArrays = function(array1, array2) {
@@ -14,7 +13,7 @@ let eqArrays = function(array1, array2) {
       } else return false;
     }
   }
-  return false;
+  return true;
 };
 
 // Implement middle which will take in an array and return the middle-most element(s) of the given array.
@@ -35,10 +34,9 @@ const middle = function(array) {
     return newArray;
   }
 };
-
 // test code
-assertEqual(middle([1, 2, 3]), [2]);
-assertEqual(middle([1, 2, 3]), 2);
-assertEqual(middle([1, 2]), 2);
-assertEqual(middle([1, 2, 3, 4, 5, 6]), ([3,4]));
-assertEqual(middle([1, 2, 3, 4, 5, 6, 7]), 2);
+assertArrayEqual(middle([1, 2, 3]), [2]);
+assertArrayEqual(middle([1, 2, 3]), [2]);
+assertArrayEqual(middle([1, 2]), []);
+assertArrayEqual(middle([1, 2, 3, 4, 5, 6]), [3,4]);
+assertArrayEqual(middle([1, 2, 3, 4, 5, 6, 7]), [4]);
