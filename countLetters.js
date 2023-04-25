@@ -7,17 +7,22 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-let countLetters = function(str,letter) {
-  let count = 0;
+
+const countLetters = function(str) {
+  const count = {};
   for (let i = 0; i < str.length; i++) {
-    if (str.charAt(i) === letter)
-      console.log(str.charAt(i));
-    count++;
+    //if the key is there in the count object
+    if (count[str[i]]) {
+      count[str[i]] += 1; //increase the existing value by 1
+    } else { //if the key is not present in the count object
+      count[str[i]] = 1;
+    }
   }
   return count;
 };
+console.log(countLetters("lighthouse labs"));
+
 
 assertEqual(countLetters('LHL'), (3));
 assertEqual(countLetters('ryan'), (4));
 assertEqual(countLetters('how many characters'), (19));
-// spaces count as a character
