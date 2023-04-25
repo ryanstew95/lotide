@@ -23,6 +23,6 @@ const countLetters = function(str) {
 console.log(countLetters("lighthouse labs"));
 
 
-assertEqual(countLetters('LHL'), (3));
-assertEqual(countLetters('ryan'), (4));
-assertEqual(countLetters('how many characters'), (19));
+assertEqual(countLetters('LHL').L, (2));
+assertEqual(countLetters('ryan').r, (1));
+assertEqual(countLetters('how many characters').a, (3));
