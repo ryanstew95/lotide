@@ -1,0 +1,17 @@
+const assert = require('chai').assert;
+// const eqArrays = require('../eqArrays');
+// const assertEqual = require('../assertEqual');
+const eqObjects = require('../eqObjects');
+
+const shirtObject = { color: "red", size: "medium" };
+const anotherShirtObject = { size: "medium", color: "red" };
+const longSleeveShirtObject = { size: "medium", color: "red", sleeveLength: "long" };
+
+describe("#eqObjects", () => {
+  it("returns true for (shirtObject , anotherShirtObject)", () => {
+    assert.deepEqual(eqObjects(shirtObject , anotherShirtObject), true);
+  });
+  it("returns false for (shirtObject , longSleeveShirtObject)", () => {
+    assert.deepEqual(eqObjects(shirtObject , longSleeveShirtObject), false);
+  });
+});
