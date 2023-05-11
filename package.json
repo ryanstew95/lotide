@@ -1,0 +1,26 @@
+{
+  "name": "@ryanstew95/lotide",
+  "version": "1.0.1",
+  "description": "library of test code to use",
+  "main": "assertArraysEqual.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanstew95/lotide.git"
+  },
+  "author": "Ryan Stewart",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryanstew95/lotide/issues"
+  },
+  "homepage": "https://github.com/ryanstew95/lotide#readme",
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^9.2.2"
+  }
+}
