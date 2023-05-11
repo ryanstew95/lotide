@@ -1,6 +1,4 @@
 const assert = require('chai').assert;
-// const eqArrays = require('../eqArrays');
-// const assertEqual = require('../assertEqual');
 const eqObjects = require('../eqObjects');
 
 const shirtObject = { color: "red", size: "medium" };
