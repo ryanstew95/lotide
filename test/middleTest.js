@@ -1,6 +1,4 @@
 const assert = require('chai').assert;
-const assertArrayEqual = require('../assertArraysEqual');
-const eqArrays = require('../eqArrays');
 const middle = require('../middle');
 
 describe("#middle", () => {
