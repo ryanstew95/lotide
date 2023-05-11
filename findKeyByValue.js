@@ -1,4 +1,3 @@
-// const assertEqual = require('./assertEqual');
 const findKeyByValue = function(object, value) {
   let objectkeys = Object.keys(object);
   let index = 0;
