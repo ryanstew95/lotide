@@ -1,6 +1,5 @@
 const assert = require('chai').assert;
 const findKeyByValue = require('../findKeyByValue');
-// const assertEqual = require('../assertEqual');
 const bestTVShowsByGenre = {
   sciFi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
