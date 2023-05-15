@@ -1,10 +1,11 @@
-const eqArrays = require('./eqArrays');
-const assertArrayEqual = require('./assertArraysEqual');
-
 const flatten = function(arr) {
   let flatArray = [];
+  
   for (let i = 0; i < arr.length; i++) {
-    if (Array.isArray(arr[i])) {
+    
+    const arrIsArr = Array.isArray(arr[i]);
+
+    if (arrIsArr) {
       for (let q = 0; q < arr[i].length; q++) {
         flatArray.push(arr[i][q]);
       }
