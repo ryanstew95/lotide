@@ -1,6 +1,3 @@
-// const eqArrays = require('./eqArrays');
-// const assertArrayEqual = require('./assertArraysEqual');
-
 const takeUntil = function(array, callback) {
   const results = [];
   for (let i = 0; i < array.length; i++) {
@@ -10,4 +7,5 @@ const takeUntil = function(array, callback) {
     results.push(array[i]);
   }
 };
+
 module.exports = takeUntil;
